@@ -1,6 +1,11 @@
 function romano(num)
 {
-    return "I";
+    let cadena = "";
+    for(let i=0;i<num;i++)
+    {
+        cadena=cadena+"I";
+    }
+    return cadena;
 }
 
 export default romano;
