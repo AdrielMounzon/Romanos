@@ -29,6 +29,11 @@ function romano(num)
         cadena = aumentarCaracter(cadena, "I", 10-num);
         cadena=cadena+"X";
     }
+    else if(num<=18)
+    {
+        cadena = aumentarCaracter(cadena, "I", 10-num);
+        cadena=cadena+"X"+romano(num-10);
+    }
     return cadena;
 }
 
