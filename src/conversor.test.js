@@ -20,4 +20,8 @@ describe("Romanos", () => {
   it("generar el romano de 5", () => {
     expect(romano(5)).toEqual("V");
   });
+
+  it("generar el romano de 8", () => {
+    expect(romano(8)).toEqual("VIII");
+  });
 });
