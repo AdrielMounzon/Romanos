@@ -10,7 +10,11 @@ function romano(num)
     }
     else
     {
-        return "IV";
+        for(let i=0;i<5-num;i++)
+        {
+            cadena=cadena+"I";
+        }
+        cadena=cadena+"V";
     }
     return cadena;
 }
