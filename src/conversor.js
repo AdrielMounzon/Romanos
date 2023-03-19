@@ -1,35 +1,32 @@
+function aumentarCaracter(cadena, caracter, cantidad)
+{
+    for(let i=0;i<cantidad;i++)
+    {
+        cadena=cadena+caracter;
+    }
+    return cadena;
+}
+
 function romano(num)
 {
     let cadena = "";
     if(num<=3)
     {
-        for(let i=0;i<num;i++)
-        {
-            cadena=cadena+"I";
-        }
+        cadena = aumentarCaracter(cadena, "I", num);
     }
     else if(num<=5)
     {
-        for(let i=0;i<5-num;i++)
-        {
-            cadena=cadena+"I";
-        }
+        cadena = aumentarCaracter(cadena, "I", 5-num);
         cadena=cadena+"V";
     }
     else if(num<=8)
     {
         cadena=cadena+"V";
-        for(let i=0;i<num-5;i++)
-        {
-            cadena=cadena+"I";
-        }
+        cadena = aumentarCaracter(cadena, "I", num-5);
     }
     else if(num<=10)
     {
-        for(let i=0;i<10-num;i++)
-        {
-            cadena=cadena+"I";
-        }
+        cadena = aumentarCaracter(cadena, "I", 10-num);
         cadena=cadena+"X";
     }
     return cadena;
