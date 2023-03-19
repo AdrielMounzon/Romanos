@@ -1,9 +1,16 @@
 function romano(num)
 {
     let cadena = "";
-    for(let i=0;i<num;i++)
+    if(num<=3)
     {
-        cadena=cadena+"I";
+        for(let i=0;i<num;i++)
+        {
+            cadena=cadena+"I";
+        }
+    }
+    else
+    {
+        return "IV";
     }
     return cadena;
 }
