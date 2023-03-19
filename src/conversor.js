@@ -10,7 +10,7 @@ function aumentarCaracter(cadena, caracter, cantidad)
 function romano(num)
 {
     let cadena = "";
-    const romanos = {10: "X", 9: "IX", 5: "V", 4: "IV", 1: "I"};
+    const romanos = {1: "I", 4: "IV", 5: "V", 9: "IX", 10: "X", 40:"XL"};
     const valoresRomanos = Object.keys(romanos).sort((a, b) => b - a);
     for (let i = 0; i < valoresRomanos.length; i++)
     {

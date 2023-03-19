@@ -40,4 +40,8 @@ describe("Romanos", () => {
   it("generar el romano de 38", () => {
     expect(romano(38)).toEqual("XXXVIII");
   });
+
+  it("generar el romano de 49", () => {
+    expect(romano(49)).toEqual("XLIX");
+  });
 });
