@@ -24,6 +24,14 @@ function romano(num)
             cadena=cadena+"I";
         }
     }
+    else if(num<=10)
+    {
+        for(let i=0;i<10-num;i++)
+        {
+            cadena=cadena+"I";
+        }
+        cadena=cadena+"X";
+    }
     return cadena;
 }
 
